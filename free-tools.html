@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free tools. Elle Fitz Anderson</title>
+<meta name="description" content="Free, public tools for product people from Elle Fitz Anderson: the AI Dictionary, the Product Leadership Toolkit, and working field notes.">
+<link rel="canonical" href="https://www.andersonco.uk/free-tools.html">
+<link rel="icon" type="image/png" href="leaf-oak.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap header-inner">
+    <a class="wordmark" href="index.html" aria-label="Home"><img src="leaf-oak.png" alt=""><span class="wm-text">Elle Fitz Anderson</span></a>
+    <nav class="main" aria-label="Main">
+      <a href="work-with-me.html">Work with me</a>
+      <a href="about.html">About</a>
+      <a href="writing.html">Writing</a>
+      <a href="free-tools.html" aria-current="page">Free tools</a>
+      <a class="btn-book" href="https://outlook.office.com/book/VitualMeetingsAtAndersonCo@andersonco.uk/?ismsaljsauthenabled">Book a conversation</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="page-head leafwrap">
+    <img class="leaf-float" src="leaf-maple.png" alt="" style="width:170px; right:2%; top:-20px; transform:rotate(-14deg);">
+    <div class="wrap">
+      <p class="eyebrow">Free tools</p>
+      <h1>Tools you can open,<br>not claims you must trust<span class="dot">.</span></h1>
+      <p class="lede" style="margin-top:10px;">Everything here is free and public by design. The tailoring, which is how each tool bends to a specific organisation, is the part I keep in the kit bag.</p>
+    </div>
+  </section>
+  <section style="padding:30px 0 80px;">
+    <div class="wrap">
+      <div class="res-grid">
+        <div class="res-card reveal">
+          <img class="leaf-mark" src="leaf-oak.png" alt="">
+          <h3>The AI Dictionary</h3>
+          <p>My field guide to twenty-seven AI terms, organised by where you will actually meet them: in discovery, in delivery, in the risk register, in the boardroom. Every entry ends with the question worth asking in your next meeting. Share it with your team.</p>
+          <a class="btn-ghost" href="ai-vocabulary.html">Open the AI Dictionary</a>
+        </div>
+        <div class="res-card reveal">
+          <img class="leaf-mark" src="leaf-simple.png" alt="">
+          <h3>The Product Leadership Toolkit</h3>
+          <p>Diagnostics, strategy and coaching resources for product leaders, maintained in the open on GitHub. Fork it, use it, tell me what broke.</p>
+          <a class="btn-ghost" href="https://github.com/ellefitzanderson/product-leadership-toolkit">Open the toolkit</a>
+        </div>
+        <div class="res-card reveal">
+          <img class="leaf-mark" src="leaf-sprig.png" alt="">
+          <h3>Field notes</h3>
+          <p>Working essays on product craft, ways of working, and AI in practice. Undated and unattributed on purpose, drawn from the inside of real buildings.</p>
+          <a class="btn-ghost" href="writing.html">Read the field notes</a>
+        </div>
+        <div class="res-card reveal">
+          <img class="leaf-mark" src="leaf-maple.png" alt="">
+          <h3>Coming to this shelf</h3>
+          <p>An AI-era product capability assessment, workshop templates, and a build guide for classroom GPTs. Requesters of my CV hear first when they land.</p>
+          <a class="btn-ghost" href="request-cv.html">Join the list</a>
+        </div>
+      </div>
+      <p style="margin-top:34px; font-size:15px; color:var(--cream-dim);">If the tools help, we will probably work well together. <a href="work-with-me.html">Here is how that works</a>, or <a href="https://outlook.office.com/book/VitualMeetingsAtAndersonCo@andersonco.uk/?ismsaljsauthenabled">book a conversation</a>.</p>
+    </div>
+  </section>
+</main>
+<footer class="site leafwrap">
+  <img class="leaf-float" src="leaf-simple.png" alt="" style="width:90px; right:6%; top:-16px; transform:rotate(30deg);">
+  <div class="wrap foot-inner">
+    <div class="foot-links">
+      <a href="request-cv.html">Get in touch</a>
+      <a href="https://www.linkedin.com/in/ellefitzanderson">LinkedIn</a>
+      <a href="https://github.com/ellefitzanderson">GitHub</a>
+    </div>
+    <span class="foot-fine">© 2026 Elle Fitz Anderson · Anderson &amp; Co · United Kingdom · Designed and built by me, with Claude · <a href="https://github.com/ellefitzanderson/ellefitzanderson.github.io">source on GitHub</a></span>
+  </div>
+</footer>
+<script>
+const io = new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
