@@ -155,7 +155,7 @@ footer.site{border-top:1px solid var(--hairline); padding:38px 0 56px; position:
   .portrait{position:static;}
   .pillar-grid,.made-grid,.beliefs-grid{grid-template-columns:1fr;}
   .res-grid,.strings{grid-template-columns:1fr;}
-  nav.main a:not(.btn-book){display:none;}
+  .header-inner{flex-wrap:wrap;} nav.main{flex-wrap:wrap; gap:10px 16px;} nav.main a{font-size:11px;}
   .hero{padding:52px 0 56px;}
   .gate-inner{padding:34px 24px;}
 }
