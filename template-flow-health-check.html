@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Flow Health Check. A free template from Elle Fitz Anderson</title>
+<meta name="description" content="Ten checks that reveal whether your kanban board is telling the truth. Free to use and share, from Elle Fitz Anderson.">
+<link rel="icon" type="image/png" href="leaf-oak.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--teal:#0A1F1C; --ink:#1C2A27; --soft:#4A574F; --paper:#FBFAF5; --line:#E2DECF; --gold:#C9A227; --golddeep:#8F6F1B;}
+*{box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact;}
+body{margin:0; background:#EDEAE0; font-family:'IBM Plex Sans',sans-serif; color:var(--ink); line-height:1.55;}
+.sheet{max-width:880px; margin:30px auto; background:var(--paper); padding:48px 52px 40px; box-shadow:0 16px 40px rgba(0,0,0,0.12);}
+@media print{ body{background:none;} .sheet{margin:0; box-shadow:none; padding:24px 8px;} }
+.tophat{display:flex; align-items:center; justify-content:space-between; border-bottom:2px solid var(--gold); padding-bottom:14px; margin-bottom:26px;}
+.tophat img{height:34px;}
+.tophat .who{font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:var(--golddeep);}
+h1{font-family:'Fraunces',serif; font-weight:600; font-size:30px; margin:0 0 6px;}
+.sub{color:var(--soft); font-size:14.5px; margin:0 0 26px; max-width:66ch;}
+h2{font-family:'Fraunces',serif; font-weight:600; font-size:19px; margin:26px 0 10px; color:var(--teal);}
+.check{display:flex; gap:12px; align-items:flex-start; border:1px solid var(--line); background:#fff; padding:12px 14px; margin-bottom:8px;}
+.box{width:18px; height:18px; border:2px solid var(--golddeep); flex-shrink:0; margin-top:2px;}
+.check p{margin:0; font-size:13.5px;}
+.check p .q{display:block; font-size:12px; color:var(--soft); margin-top:3px;}
+.elle{border-left:3px solid var(--gold); padding:10px 14px; background:#F5F1E3; font-size:13px; color:var(--soft); margin:24px 0;}
+.score{border:1px solid var(--line); background:#fff; padding:14px 16px; font-size:13.5px;}
+.foot{margin-top:30px; padding-top:14px; border-top:1px solid var(--line); font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--soft); display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;}
+.foot a{color:var(--golddeep); text-decoration:none;}
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="tophat"><img src="leaf-oak.png" alt=""><span class="who">Free tools · Elle Fitz Anderson · andersonco.uk</span></div>
+  <h1>The Flow Health Check</h1>
+  <p class="sub">Ten checks that reveal whether your board is telling the truth. Tick what is true today, not what the process document says. Run it with the whole team in fifteen minutes, then argue about the gaps. Companion to my field note, <a href="writing.html#kanban-board-lying" style="color:var(--golddeep);">Your kanban board is lying to you</a>.</p>
+
+  <h2>Waiting disguised as working</h2>
+  <div class="check"><span class="box"></span><p>Wait states are visible. Blocked and waiting work is tagged or has its own lane, it does not sit in "In progress" looking busy.<span class="q">Ask: pick any in-progress ticket. What happened on it yesterday? If the honest answer is "waited", it wasn't in progress.</span></p></div>
+  <div class="check"><span class="box"></span><p>We know our flow efficiency, even roughly. We can say what share of cycle time is active work versus waiting.<span class="q">Ask: is the number under 40 percent? For most teams it is. That is normal, and it is also the biggest lever you have.</span></p></div>
+  <div class="check"><span class="box"></span><p>Dependencies on other teams are visible on our board, not just in someone's head or a Slack thread.</p></div>
+
+  <h2>Work that never boards</h2>
+  <div class="check"><span class="box"></span><p>Production support, incidents and "quick favours" go on the board, however small.<span class="q">Ask: what did each person do this week that appears nowhere? That is your invisible capacity leak.</span></p></div>
+  <div class="check"><span class="box"></span><p>The board reflects true capacity. Nobody is secretly on two boards, half-allocated, or covering for a vacancy the board doesn't know about.</p></div>
+  <div class="check"><span class="box"></span><p>WIP limits exist, are visible, and stopped something recently. A limit that has never been hit is a decoration.</p></div>
+
+  <h2>Columns describing hand-offs, not value</h2>
+  <div class="check"><span class="box"></span><p>Columns describe progress toward customer value, not our org chart. "Dev, Code review, QA, Deploy" is a diagram of hand-offs, and every boundary is a queue.</p></div>
+  <div class="check"><span class="box"></span><p>Done means in customers' hands, or the column says what it really means.<span class="q">Ask: how many "done" items from last month have no customer using them yet?</span></p></div>
+  <div class="check"><span class="box"></span><p>Cycle time is measured from commitment to customer, not from "picked up" to "merged".</p></div>
+  <div class="check"><span class="box"></span><p>The board starts arguments. Someone was made usefully uncomfortable by it in the last month. A board that never embarrasses anyone is decorative.</p></div>
+
+  <div class="score"><strong>Scoring, loosely:</strong> 8 to 10 ticks, your board and reality mostly agree, manage the trend. 5 to 7, pick the two unticked boxes that hurt most and fix only those this quarter. 0 to 4, stop tuning ceremonies, your board is fiction, start by boarding everything and tagging the waiting.</div>
+
+  <div class="elle"><strong>How I use this:</strong> not as an audit. I run it with the team, ticks are agreed together, and the disagreements about whether a box deserves a tick are worth more than the score. Repeat quarterly, chase the trend, ignore the absolute number.</div>
+
+  <div class="foot"><span>Free to use and share, with attribution.</span><span><a href="free-tools.html">More free tools</a> · <a href="work-with-me.html">Ways to work together</a> · <a href="index.html">andersonco.uk</a></span></div>
+</div>
+</body>
+</html>
