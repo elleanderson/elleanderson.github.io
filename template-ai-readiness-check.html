@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The AI Feature Readiness Check. A free template from Elle Fitz Anderson</title>
+<meta name="description" content="Nine questions to ask from the product chair before an AI feature ships. Free to use and share, from Elle Fitz Anderson.">
+<link rel="icon" type="image/png" href="leaf-oak.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--teal:#0A1F1C; --ink:#1C2A27; --soft:#4A574F; --paper:#FBFAF5; --line:#E2DECF; --gold:#C9A227; --golddeep:#8F6F1B;}
+*{box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact;}
+body{margin:0; background:#EDEAE0; font-family:'IBM Plex Sans',sans-serif; color:var(--ink); line-height:1.55;}
+.sheet{max-width:880px; margin:30px auto; background:var(--paper); padding:48px 52px 40px; box-shadow:0 16px 40px rgba(0,0,0,0.12);}
+@media print{ body{background:none;} .sheet{margin:0; box-shadow:none; padding:24px 8px;} }
+.tophat{display:flex; align-items:center; justify-content:space-between; border-bottom:2px solid var(--gold); padding-bottom:14px; margin-bottom:26px;}
+.tophat img{height:34px;}
+.tophat .who{font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:var(--golddeep);}
+h1{font-family:'Fraunces',serif; font-weight:600; font-size:30px; margin:0 0 6px;}
+.sub{color:var(--soft); font-size:14.5px; margin:0 0 26px; max-width:66ch;}
+.q{border:1px solid var(--line); background:#fff; padding:14px 16px 12px; margin-bottom:10px;}
+.q .k{font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:var(--golddeep); display:block; margin-bottom:4px;}
+.q p{margin:0 0 8px; font-size:13.5px;}
+.q .why{font-size:12px; color:var(--soft); margin:0 0 10px;}
+.lines{border-bottom:1px dotted #B9B4A2; height:26px;}
+.lines + .lines{margin-top:4px;}
+.elle{border-left:3px solid var(--gold); padding:10px 14px; background:#F5F1E3; font-size:13px; color:var(--soft); margin:24px 0;}
+.foot{margin-top:30px; padding-top:14px; border-top:1px solid var(--line); font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--soft); display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;}
+.foot a{color:var(--golddeep); text-decoration:none;}
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="tophat"><img src="leaf-oak.png" alt=""><span class="who">Free tools · Elle Fitz Anderson · andersonco.uk</span></div>
+  <h1>The AI Feature Readiness Check</h1>
+  <p class="sub">Nine questions to ask from the product chair, not the machine learning chair, before an AI feature ships. I have led ML and algorithm-centric products since 2017, and every expensive failure I have watched would have been caught by one of these. Write real answers, not reassurances.</p>
+
+  <div class="q"><span class="k">1. The outcome, technology-free</span><p>Describe what the customer gets without using the words AI, model, or agent.</p><p class="why">If it cannot be described, it is a demo, not a product.</p><div class="lines"></div><div class="lines"></div></div>
+  <div class="q"><span class="k">2. The cost of a wrong answer</span><p>What happens, specifically, when the feature gets it wrong? Who pays, and what do they lose?</p><p class="why">Charming once, fatal twice. Trust is a metric you design for, not hope for.</p><div class="lines"></div><div class="lines"></div></div>
+  <div class="q"><span class="k">3. The moment after</span><p>What does the user see and do immediately after a wrong or low-confidence answer?</p><p class="why">The failure state is the product. If it is unspecified, the feature is unfinished.</p><div class="lines"></div><div class="lines"></div></div>
+  <div class="q"><span class="k">4. Confidence thresholds</span><p>At what confidence do we show, hedge, or stay silent? Who chose those numbers, and on what evidence?</p><div class="lines"></div><div class="lines"></div></div>
+  <div class="q"><span class="k">5. The eval as a product artefact</span><p>What does the evaluation set contain, who weighted it by customer impact, and when was it last refreshed?</p><p class="why">Accuracy on the eval is not accuracy as experienced. The product chair co-owns the eval or the eval measures the wrong thing.</p><div class="lines"></div><div class="lines"></div></div>
+  <div class="q"><span class="k">6. Unit economics</span><p>What does one interaction cost today, and what does the curve look like at ten times the volume?</p><div class="lines"></div><div class="lines"></div></div>
+  <div class="q"><span class="k">7. The boring test</span><p>Would this initiative still make sense if the technology were boring? What is the hypothesis, and what evidence would kill it?</p><div class="lines"></div><div class="lines"></div></div>
+  <div class="q"><span class="k">8. Data honesty</span><p>Where does the training and grounding data come from, what is it missing, and who does that gap disadvantage?</p><div class="lines"></div><div class="lines"></div></div>
+  <div class="q"><span class="k">9. The kill criteria</span><p>What measured result, by what date, switches this feature off? Who has the authority to pull it?</p><p class="why">Features without kill criteria do not get killed, they get quietly ignored while costing money.</p><div class="lines"></div><div class="lines"></div></div>
+
+  <div class="elle"><strong>How I use this:</strong> at the go/no-go, out loud, with engineering and the data science lead in the room. Questions 2, 3 and 9 cause the arguments, which is exactly what they are for. A team that answers all nine crisply is ready. A team that answers eight is nearly ready. A team that bristles is telling you something.</div>
+
+  <div class="foot"><span>Free to use and share, with attribution.</span><span><a href="free-tools.html">More free tools</a> · <a href="work-with-me.html">Ways to work together</a> · <a href="index.html">andersonco.uk</a></span></div>
+</div>
+</body>
+</html>
