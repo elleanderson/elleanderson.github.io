@@ -50,10 +50,10 @@
         <p><strong>CV requests.</strong> If you request my CV, the form collects your email address and anything you tell me about what you are hiring for. It is delivered to me by Formspree. The legal basis is your consent and my legitimate interest in responding to you. I use it to send the CV and follow up on your request, nothing else.</p>
         <p><strong>Booking a conversation.</strong> Meeting bookings run through Microsoft Bookings, under Microsoft's own terms and privacy policy.</p>
         <p><strong>Site hosting and technical logs.</strong> The site is hosted on GitHub Pages. Like most hosts, GitHub may log visitor IP addresses for security and operational purposes under its own privacy policy. I do not receive those logs.</p>
-        <p><strong>Analytics and live chat, where enabled.</strong> When analytics or a chat window are active on this site, the provider processes technical data about your visit: IP address, approximate location (city level), device and browser type, and the pages you view. If you use the chat, the conversation and anything you choose to share in it are also processed so I can reply. The legal basis is my legitimate interest in understanding how the site is used and in answering visitors' questions. Chat and analytics providers act as my processors.</p>
+        <p><strong>Live chat and visitor analytics.</strong> The chat window on this site is provided by tawk.to, which processes technical data about your visit: IP address, approximate location (city level), device and browser type, and the pages you view. If you use the chat, the conversation and anything you choose to share in it are also processed so I can reply. The legal basis is my legitimate interest in understanding how the site is used and in answering visitors' questions. Chat and analytics providers act as my processors.</p>
 
         <h3>Who else touches the data</h3>
-        <p>I use a small number of processors to run this site: Kit (email list and toolkit delivery), Formspree (form delivery), GitHub (hosting), and Microsoft (bookings), plus an analytics/chat provider where enabled. Some are based in the United States; transfers rely on the UK Extension to the EU-US Data Privacy Framework or standard contractual clauses, per each provider's documentation. I do not sell personal data, and I do not share it with anyone else except where the law requires.</p>
+        <p>I use a small number of processors to run this site: Kit (email list and toolkit delivery), Formspree (form delivery), GitHub (hosting), and Microsoft (bookings), plus tawk.to (live chat and visitor analytics). Some are based in the United States; transfers rely on the UK Extension to the EU-US Data Privacy Framework or standard contractual clauses, per each provider's documentation. I do not sell personal data, and I do not share it with anyone else except where the law requires.</p>
 
         <h3>How long I keep it</h3>
         <p>Subscriber details stay on the list until you unsubscribe or ask me to delete them. CV request emails are kept for as long as the conversation is live and deleted when no longer needed. Chat transcripts and analytics data follow the retention settings of the provider, kept no longer than needed to answer you and understand site usage.</p>
@@ -80,7 +80,7 @@
       <a href="https://github.com/elleanderson">GitHub</a>
       <a href="privacy.html">Privacy</a>
     </div>
-    <span class="foot-fine">© 2026 Elle Anderson · Anderson &amp; Co · United Kingdom · Designed and built by me, with Claude · <a href="https://github.com/elleanderson/elleanderson.github.io">source on GitHub</a></span>
+    <span class="foot-fine">© 2026 Elle Anderson · Anderson &amp; Co · United Kingdom · Designed and built by me, with Claude</span>
   </div>
 </footer>
 
@@ -89,6 +89,18 @@ const io = new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.t
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 </script>
 <!-- INTEGRATION SLOT: paste Cloudflare Web Analytics snippet here -->
-<!-- INTEGRATION SLOT: paste Tawk.to chat snippet here -->
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6a5d31e2940f101d5323b44a/1jtu0lne2';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 </body>
 </html>
