@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page not found. Elle Anderson</title>
+<meta name="description" content="404. This page does not exist, but here is a true thing instead.">
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" href="leaf-oak.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap header-inner">
+    <a class="wordmark" href="index.html" aria-label="Anderson &amp; Co home">
+      <img src="leaf-oak.png" alt="">
+      <span class="wm-text">Elle Anderson</span>
+    </a>
+    <nav class="main" aria-label="Main">
+      <a href="work-with-me.html">How I can help</a>
+      <a href="about.html">About</a>
+      <a href="field-notes.html">Field Notes</a>
+      <a href="free-tools.html">Free tools</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-head leafwrap">
+    <img class="leaf-float" src="leaf-maple.png" alt="" style="width:190px; right:-30px; top:-20px; transform:rotate(-18deg);">
+    <div class="wrap">
+      <p class="eyebrow">404</p>
+      <h1>This page doesn't exist<span class="dot">.</span></h1>
+      <p class="lede" style="margin-top:10px;">The link is wrong, the page moved, or it was never real. While you're here, a true thing from inside the buildings:</p>
+      <div class="res-card reveal in" style="max-width:640px; margin-top:26px;">
+        <span class="s-k" style="font-family:var(--mono); font-size:10.5px; letter-spacing:0.1em; text-transform:uppercase; color:var(--gold); display:block; margin-bottom:10px;">Field fact</span>
+        <p id="fact" style="font-size:16px; line-height:1.6;"></p>
+        <div style="margin-top:16px; display:flex; gap:12px; flex-wrap:wrap;">
+          <button id="another" class="btn-ghost" style="cursor:pointer; font:inherit;">Another fact</button>
+          <a class="btn-primary" href="index.html">Take me home</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<script>
+var facts = [
+  "In most delivery systems, a piece of work spends more than 80% of its life waiting for someone, not being worked on. The queue is the product nobody scoped.",
+  "The Eisenhower matrix was never drawn by Eisenhower. He just said the urgent things are seldom important; a consultant drew the box.",
+  "Amazon's one-way/two-way door test exists because most decisions are reversible, and most organisations decide all of them at the speed of the few that aren't.",
+  "The first computer bug was an actual moth, taped into a Harvard logbook in 1947 with the note 'first actual case of bug being found'.",
+  "Post-it notes exist because a 3M adhesive failed. The riskiest assumption test sometimes runs itself.",
+  "A LEGO brick from 1958 still clicks perfectly into one moulded today. That is what a well-managed interface contract looks like.",
+  "The word 'deadline' originally meant a line around a prison beyond which prisoners were shot. Worth remembering before you commit a team to one.",
+  "Oak trees drop thousands of acorns for every one that becomes a tree. Discovery works the same way, and that is not a failure rate; it is the mechanism.",
+  "Scrum takes its name from rugby, borrowed by Takeuchi and Nonaka in 1986 to describe teams moving down the field as a unit, passing the ball as needed.",
+  "The average enterprise roadmap item outlives three of the assumptions it was built on. Write down what would change your mind while you still remember it."
+];
+var el = document.getElementById('fact');
+var last = -1;
+function pick(){
+  var i; do { i = Math.floor(Math.random()*facts.length); } while (i === last);
+  last = i; el.textContent = facts[i];
+}
+pick();
+document.getElementById('another').addEventListener('click', pick);
+</script>
+<footer class="site leafwrap">
+  <img class="leaf-float" src="leaf-simple.png" alt="" style="width:90px; right:6%; top:-16px; transform:rotate(30deg);">
+  <div class="wrap foot-inner">
+    <div class="foot-links">
+      <a href="request-cv.html">Get in touch</a>
+      <a href="https://www.linkedin.com/in/andersonelle">LinkedIn</a>
+      <a href="https://github.com/elleanderson">GitHub</a>
+      <a href="privacy.html">Privacy</a>
+    </div>
+    <span class="foot-fine">© 2026 Elle Anderson · Anderson &amp; Co · United Kingdom · Designed and built by me, with Claude</span>
+  </div>
+</footer>
+
+<script>
+const io = new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+<!-- INTEGRATION SLOT: paste Cloudflare Web Analytics snippet here -->
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6a5d31e2940f101d5323b44a/1jtu0lne2';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</body>
+</html>
