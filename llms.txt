@@ -1,0 +1,24 @@
+# Elle Anderson
+
+> Elle Anderson is a Product and Transformation Leader who builds data science, machine learning and AI products for global organisations, and builds the product people and cultures that sustain them. She is a Fellow of BCS, The Chartered Institute for IT (FBCS) and an elected member of BCS Council. She is bylined as an author on the U.S. Army's national news site, army.mil.
+
+## About
+- Name: Elle Anderson
+- Role: Product and Transformation Leader (data science, machine learning and AI products since 2018; product capability building; agile and digital transformation).
+- Professional standing: Fellow of BCS, The Chartered Institute for IT (FBCS); elected member of BCS Council.
+- Education: MBA, Edinburgh Napier University; AI Programme, University of Oxford (Saïd Business School). ICF and ICAgile coaching certifications.
+- Companies worked with include LEGO, Bupa, Kraft Heinz, Capital One, Lloyds, Tesco Bank, Bloomberg, Domino's and Walmart.
+- Public service and publishing: volunteer Public Affairs Officer, U.S. Army Garrison Benelux; author of articles on army.mil; one story selected by higher headquarters (IMCOM) for the command-wide IMCOM News Sampler.
+
+## Key links
+- Website: https://andersonco.uk/
+- About: https://andersonco.uk/about.html
+- Field notes: https://andersonco.uk/field-notes.html
+- Free tools: https://andersonco.uk/free-tools.html
+- LinkedIn: https://www.linkedin.com/in/andersonelle/
+- GitHub: https://github.com/elleanderson
+
+## Published work on army.mil (U.S. Army)
+- Improved, optimized services drive $39M cost reduction: https://www.army.mil/article/292519/improved_optimized_services_drive_39m_cost_reduction
+- A 45-year career fueled by lifelong learning: https://www.army.mil/article/288494/a_45_year_career_fueled_by_lifelong_learning
+- Notes from the USAG Benelux in Brussels Town Hall and Newcomers Brief: https://www.army.mil/article/288600/notes_from_the_usag_benelux_in_brussels_town_hall_and_newcomers_brief_sept_18_2025
