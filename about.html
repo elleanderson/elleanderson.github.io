@@ -1,127 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>About, Elle Anderson</title>
-<meta name="description" content="About Elle Anderson, product and transformation leader, manager-as-coach, visual facilitator. An American who made the UK home.">
-<link rel="canonical" href="https://andersonco.uk/about.html">
-<link rel="icon" type="image/png" href="leaf-oak.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="site.css">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0A1F1C;--panel:#0E2823;--panel2:#123029;--cream:#F2EDDF;--muted:#A9B4AC;
+    --gold:#C9A227;--gold-soft:rgba(201,162,39,.12);--line:rgba(242,237,223,.12);--line2:rgba(242,237,223,.2);
+    --serif:'Fraunces',Georgia,serif;--sans:'IBM Plex Sans',system-ui,sans-serif;--mono:'IBM Plex Mono',monospace;
+    --maxw:1040px;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--cream);font-family:var(--sans);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px;position:relative}
+  h1,h2,h3{font-family:var(--serif);font-weight:500;letter-spacing:-.015em;line-height:1.08;margin:0}
+  h1{font-size:clamp(40px,6vw,68px)}
+  .dot{color:var(--gold)}
+  p{margin:0 0 20px}
+  .muted{color:var(--muted)}
+  a.inline{color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(201,162,39,.4)}
+  a.inline:hover{border-color:var(--gold)}
+
+  /* decorative leaves */
+  .leafbg{position:absolute;pointer-events:none;opacity:.06;z-index:0}
+  .leafbg svg{display:block}
+  .l1{top:-40px;right:-90px;width:360px;transform:rotate(18deg)}
+  .l2{bottom:-120px;left:-120px;width:420px;transform:rotate(-24deg)}
+
+  /* preview chrome */
+  .pvbar{border-bottom:1px solid var(--line);background:rgba(10,31,28,.9)}
+  .pvbar .wrap{display:flex;justify-content:space-between;align-items:center;height:56px}
+  .pvbar .l{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.14em;color:var(--muted)}
+  .pvbar .r{font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--gold)}
+
+  /* hero */
+  .hero{padding:72px 0 40px;position:relative;z-index:1}
+  .eyebrow{font-family:var(--mono);text-transform:uppercase;letter-spacing:.16em;font-size:12px;color:var(--gold);display:flex;align-items:center;gap:14px;margin-bottom:26px}
+  .eyebrow::before{content:"";width:38px;height:1px;background:var(--gold)}
+  .herogrid{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:start;margin-top:30px}
+  @media(max-width:820px){.herogrid{grid-template-columns:1fr;gap:36px}}
+  .herotext h1{margin-bottom:26px}
+  .portrait{position:relative;margin-top:6px}
+  .portrait img{width:100%;height:auto;display:block;border-radius:3px;border:1px solid var(--line2);filter:saturate(1.02)}
+  .portrait::after{content:"";position:absolute;inset:12px -12px -12px 12px;border:1px solid var(--gold);border-radius:3px;z-index:-1;opacity:.55}
+  .heronote{max-width:66ch;margin-top:30px}
+  .lead{font-size:20px;line-height:1.6}
+  .lead .drop{float:left;font-family:var(--serif);font-weight:600;font-size:68px;line-height:.82;color:var(--gold);margin:8px 14px 0 0}
+
+  /* sections */
+  section.block{padding:52px 0;border-top:1px solid var(--line);position:relative;z-index:1}
+  .snum{font-family:var(--mono);text-transform:uppercase;letter-spacing:.14em;font-size:12px;color:var(--gold);margin-bottom:24px}
+  .snum b{color:var(--cream);font-weight:400}
+  .theme{margin:0 0 30px;max-width:64ch}
+  .theme:last-child{margin-bottom:0}
+  .theme .t{font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--gold);margin-bottom:8px}
+  .theme h3{font-size:23px;margin-bottom:10px}
+  .pull{font-family:var(--serif);font-size:26px;line-height:1.34;color:var(--cream);border-left:2px solid var(--gold);padding-left:22px;margin:22px 0 6px;max-width:60ch}
+  .fieldlink{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--gold);text-decoration:none;margin-top:2px}
+  .note{background:var(--panel);border:1px dashed var(--line2);border-radius:4px;padding:9px 13px;font-size:12.5px;color:var(--muted);margin-top:16px;max-width:60ch}
+
+  .skills{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:5px;overflow:hidden}
+  @media(max-width:640px){.skills{grid-template-columns:1fr}}
+  .skill{padding:22px 24px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--panel)}
+  .skill:nth-child(2n){border-right:none}
+  .skill .st{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--gold);margin-bottom:6px}
+  .skill p{font-size:15px;margin:0;color:var(--cream)}
+
+  .creds{font-family:var(--mono);font-size:13.5px;color:var(--cream);line-height:2;background:var(--panel);border:1px solid var(--line);border-left:2px solid var(--gold);border-radius:4px;padding:20px 24px}
+  .creds b{color:var(--muted);font-weight:400}
+
+  .quotes{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:720px){.quotes{grid-template-columns:1fr}}
+  .quote{background:var(--panel);border:1px solid var(--line);border-radius:5px;padding:22px 24px;position:relative}
+  .quote .mark{position:absolute;top:18px;right:20px;width:22px;opacity:.5}
+  .quote p{font-family:var(--serif);font-size:17.5px;line-height:1.5;margin:0 0 14px;color:var(--cream)}
+  .quote .who{font-family:var(--mono);font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--gold)}
+  .quote.wide{grid-column:1/-1}
+
+  .cta{padding:56px 0 80px;border-top:1px solid var(--line);position:relative;z-index:1}
+  .cta p{font-size:19px;max-width:60ch;margin:0}
+</style>
+<link rel="canonical" href="https://andersonco.uk/about.html">
+<meta name="description" content="About Elle Anderson: Product and Transformation Leader building AI, ML and data science products for global organisations. Fellow of BCS (FBCS) and elected member of BCS Council.">
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="Elle Anderson">
+<meta property="og:title" content="About Elle Anderson, Product and Transformation Leader">
+<meta property="og:description" content="About Elle Anderson: Product and Transformation Leader building AI, ML and data science products for global organisations. Fellow of BCS (FBCS) and elected member of BCS Council.">
+<meta property="og:url" content="https://andersonco.uk/about.html">
+<meta property="og:image" content="https://andersonco.uk/elle.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://andersonco.uk/#elle",
+      "name": "Elle Anderson",
+      "url": "https://andersonco.uk/",
+      "mainEntityOfPage": "https://andersonco.uk/about.html",
+      "jobTitle": "Product and Transformation Leader",
+      "description": "Product and Transformation Leader who builds data science, machine learning and AI products for global organisations, and the product teams and cultures that sustain them.",
+      "image": "https://andersonco.uk/elle.jpg",
+      "memberOf": {
+        "@type": "OrganizationRole",
+        "roleName": [
+          "Fellow (FBCS)",
+          "Elected Member of Council"
+        ],
+        "memberOf": {
+          "@type": "Organization",
+          "name": "BCS, The Chartered Institute for IT",
+          "url": "https://www.bcs.org/",
+          "sameAs": "https://en.wikipedia.org/wiki/British_Computer_Society"
+        }
+      },
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Fellowship",
+          "name": "Fellow of BCS, The Chartered Institute for IT (FBCS)"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "degree",
+          "name": "MBA, Edinburgh Napier University"
+        }
+      ],
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Edinburgh Napier University"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Oxford, Saïd Business School"
+        }
+      ],
+      "knowsAbout": [
+        "Product Management",
+        "Product Leadership",
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Data Science",
+        "Digital Transformation",
+        "Agile",
+        "Product Operating Model"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/andersonelle/",
+        "https://github.com/elleanderson"
+      ]
+    },
+    {
+      "@type": "Article",
+      "headline": "Improved, optimized services drive $39M cost reduction",
+      "url": "https://www.army.mil/article/292519/improved_optimized_services_drive_39m_cost_reduction",
+      "author": {
+        "@id": "https://andersonco.uk/#elle"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "U.S. Army"
+      }
+    },
+    {
+      "@type": "Article",
+      "headline": "A 45-year career fueled by lifelong learning",
+      "url": "https://www.army.mil/article/288494/a_45_year_career_fueled_by_lifelong_learning",
+      "author": {
+        "@id": "https://andersonco.uk/#elle"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "U.S. Army"
+      }
+    },
+    {
+      "@type": "Article",
+      "headline": "Notes from the USAG Benelux in Brussels Town Hall and Newcomers Brief",
+      "url": "https://www.army.mil/article/288600/notes_from_the_usag_benelux_in_brussels_town_hall_and_newcomers_brief_sept_18_2025",
+      "author": {
+        "@id": "https://andersonco.uk/#elle"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "U.S. Army"
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
-<header class="site">
-  <div class="wrap header-inner">
-    <a class="wordmark" href="index.html" aria-label="Anderson &amp; Co home">
-      <img src="leaf-oak.png" alt="">
-      <span class="wm-text">Elle Anderson</span>
-    </a>
-    <nav class="main" aria-label="Main">
-      <a href="work-with-me.html">How I can help</a>
-      <a href="about.html" aria-current="page">About</a>
-      <a href="field-notes.html">Field Notes</a>
-      <a href="free-tools.html">Free tools</a>
-    </nav>
-  </div>
-</header>
+<div class="pvbar"><div class="wrap">
+  <span class="l">About &middot; design preview (Version B, repositioned)</span>
+  <span class="r">not live &mdash; for your eyes</span>
+</div></div>
 
-<main>
-  <section class="page-head leafwrap">
-    <img class="leaf-float" src="leaf-sprig.png" alt="" style="width:200px; right:-50px; top:-30px; transform:rotate(20deg);">
-    <div class="wrap">
-      <p class="eyebrow">About</p>
-      <h1>The person behind<br>the practice<span class="dot">.</span></h1>
-    </div>
-  </section>
+<!-- reusable leaf shape -->
+<svg width="0" height="0" style="position:absolute"><defs>
+  <g id="leaf"><path d="M50 4 C80 26 80 74 50 96 C20 74 20 26 50 4 Z" fill="none" stroke="#C9A227" stroke-width="2.4"/><path d="M50 12 L50 88" stroke="#C9A227" stroke-width="2"/><path d="M50 40 L70 30 M50 40 L30 30 M50 56 L72 48 M50 56 L28 48 M50 70 L66 64 M50 70 L34 64" stroke="#C9A227" stroke-width="1.6"/></g>
+</defs></svg>
 
-  <section>
-    <div class="wrap about-grid">
-      <div class="portrait reveal">
-        <img src="elle.jpg" alt="Elle Anderson, seated in a wood-panelled room">
+<div class="hero">
+  <div class="leafbg l1"><svg viewBox="0 0 100 100"><use href="#leaf"/></svg></div>
+  <div class="wrap">
+    <div class="eyebrow">About</div>
+    <div class="herogrid">
+      <div class="herotext">
+        <h1>The person behind the practice<span class="dot">.</span></h1>
+        <p class="lead"><span class="drop">I</span> lead complex change and transformation in product organisations &mdash; the kind built on emerging capability, not another reorg. My work sits where new technology meets the operating model: I&rsquo;ve led data-science, machine-learning and AI products since 2018, and built the product functions and cultures that decide whether that capability actually changes how a company works.</p>
+        <p style="margin-bottom:0">The skills were never the hard part. The real work is the system around them &mdash; the decision rights, the funding model, and the habits that decide whether new capability survives contact with the org chart.</p>
       </div>
-      <div class="prose">
-        <p>I lead global, multidisciplinary product teams that create astonishing, award-winning digital products, and I breathe new life into companies with technology enablement and change management at the core. I operate comfortably at executive and board level, shaping direction, setting strategy, and aligning stakeholders. The skills matter, but the real work is the surrounding system: the decision rights, the funding model, and the habits that decide whether new capability survives contact with the org chart.</p>
-
-        <p>A career spent inside product development environments, across LEGO, Bupa, Kraft Heinz, Capital One, Lloyds, Tesco Bank, Bloomberg, Domino's, and Walmart, means that when a product manager tells me what is really getting in their way, it is rarely news. My work since 2018 has centred on data science and machine learning products, and lately on how product people actually adopt AI: where it sticks, where it stalls, and what moves a team from AI-curious to AI-fluent.</p>
-
-        <p>I am an American who has made the UK my home for over 20 years. And I test everything on myself first: the AI coach my training cohorts use began as the one I built for my own work.</p>
-
-        <p>The other half of my practice is people. I lead strong product functions and stretch capable product people into leaders who solve complex problems and delight customers. My method is <strong>manager as coach</strong>, built on ICF and ICAgile qualifications and a simple conviction:</p>
-
-        <blockquote>The people in front of me are beyond capable. They don't need fixing, they need stretching, so their ideas can reach the next level.</blockquote>
-
-        <p>And I think with my hands. I'm a trained <strong>visual facilitator</strong> and an illustrator, the video on the front page is me at my craft table, because drawing the problem is often how a room finally sees it. It's an unusual string to a product leader's bow, and it changes what workshops, strategy sessions and leadership offsites can do.</p>
-
-        <p>And on a personal note: I am a UK Armed Forces military spouse, and I have built this career around my husband’s service as a senior officer in the British Army. Since 2024 that has meant interim product consulting for companies like Bloomberg, Meta, and Powerverse while completing my MBA, and lending the same skills to armed-forces organisations I care about: setting the strategic framework for America 250 and 9/11 commemorations at U.S. Army Garrison Benelux, coaching as an ICF-qualified professional with Recruit for Spouses UK, serving on the board of SHAPE International Women’s Club at NATO’s strategic headquarters, and designing a Bereavement Hub (customer journeys, interaction design, and a custom GPT) for Beyond the Wire, a charity for the armed-forces bereaved.</p>
-
-        <h3>Skills</h3>
-        <div class="strings">
-          <div class="string reveal"><span class="s-k">Craft</span><p>Product strategy, discovery, and delivery at enterprise scale, the full lifecycle, owned.</p></div>
-          <div class="string reveal"><span class="s-k">People</span><p>Manager-as-coach leadership; ICF and ICAgile certified; capability building for whole functions.</p></div>
-          <div class="string reveal"><span class="s-k">AI-native</span><p>Practising, not posturing, shipped machine learning before the gold rush; builds with AI daily.</p></div>
-          <div class="string reveal"><span class="s-k">Visual facilitation</span><p>Trained facilitator and illustrator; workshops where the thinking gets drawn, not just discussed.</p></div>
-          <div class="string reveal"><span class="s-k">Education</span><p>MBA, Edinburgh Napier University (2026); Oxford Saïd AI Programme; Fellow of BCS, The Chartered Institute for IT (2023).</p></div>
-          <div class="string reveal"><span class="s-k">Range</span><p>Employed leadership roles alongside a client practice through Anderson &amp; Co, often in two countries at once.</p></div>
-        </div>
-
-        <h3>On stage and in print</h3>
-        <p>I speak on product, transformation, and careers in technology, panels, webinars, and features. A couple of public ones:</p>
-        <div class="res-grid" style="margin-top:18px;">
-          <a class="res-card reveal" href="https://allbrighteverywoman.com/tech-hub/this-under-rated-trait-could-be-key-to-a-successful-career-in-digital-transformation/" style="display:block; color:inherit;">
-            <span class="s-k" style="font-family:var(--mono); font-size:10.5px; letter-spacing:0.1em; text-transform:uppercase; color:var(--gold); display:block; margin-bottom:10px;">Feature · everywoman Tech Hub</span>
-            <h3>&ldquo;This under-rated trait could be key to a successful career in digital transformation.&rdquo;</h3>
-            <p>A Tech Role Models profile on curiosity, product craft, and the invisible apps behind everyday life &mdash; and why the best product careers are built on asking one more question.</p>
-            <span class="btn-ghost">Read the feature</span>
-          </a>
-          <a class="res-card reveal" href="https://allbrighteverywoman.com/tech-hub/on-demand-webinar-embracing-it-agility-tips-for-the-digital-era/" style="display:block; color:inherit;">
-            <span class="s-k" style="font-family:var(--mono); font-size:10.5px; letter-spacing:0.1em; text-transform:uppercase; color:var(--gold); display:block; margin-bottom:10px;">Panel · everywoman Tech Hub</span>
-            <h3>&ldquo;Embracing IT Agility: Tips for the Digital Era.&rdquo;</h3>
-            <p>A recorded panel with senior technology leaders on making agility real beyond the slideware &mdash; flow over ceremony, outcomes over ritual.</p>
-            <span class="btn-ghost">Watch the panel</span>
-          </a>
-        </div>
-        <p style="margin-top:14px;">If you'd like me on a stage or a panel, <a href="https://outlook.office.com/book/VitualMeetingsAtAndersonCo@andersonco.uk/?ismsaljsauthenabled">book a conversation</a>.</p>
-
-        <p style="margin-top:26px;">The full story, names, numbers, and the client history, is in my CV, which I send personally. <a href="request-cv.html">Request it here</a>, or <a href="https://outlook.office.com/book/VitualMeetingsAtAndersonCo@andersonco.uk/?ismsaljsauthenabled">book a conversation</a> and I'll tell you the good parts myself.</p>
+      <div class="portrait">
+        <img src="https://andersonco.uk/elle.jpg" alt="Elle Anderson, product and transformation leader">
       </div>
     </div>
-  </section>
-</main>
-
-<footer class="site leafwrap">
-  <img class="leaf-float" src="leaf-simple.png" alt="" style="width:90px; right:6%; top:-16px; transform:rotate(30deg);">
-  <div class="wrap foot-inner">
-    <div class="foot-links">
-      <a href="request-cv.html">Get in touch</a>
-      <a href="https://www.linkedin.com/in/andersonelle">LinkedIn</a>
-      <a href="https://github.com/elleanderson">GitHub</a>
-      <a href="privacy.html">Privacy</a>
-    </div>
-    <span class="foot-fine">© 2026 Elle Anderson · Anderson &amp; Co · United Kingdom · Designed and built by me, with Claude</span>
+    <p class="heronote">That career has run inside product development at LEGO, Bupa, Kraft Heinz, Capital One, Lloyds, Tesco Bank, Bloomberg, Domino&rsquo;s and Walmart, so when a product manager tells me what&rsquo;s really getting in their way, it&rsquo;s rarely news. I&rsquo;m an American who&rsquo;s made the UK home for over 20 years &mdash; and I test everything on myself first: the AI coach my cohorts use started as the one I built for my own work.</p>
   </div>
-</footer>
+</div>
 
-<script>
-const io = new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:0.1});
-document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-</script>
-<!-- INTEGRATION SLOT: paste Cloudflare Web Analytics snippet here -->
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/6a5d31e2940f101d5323b44a/1jtu0lne2';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+<section class="block"><div class="wrap">
+  <div class="snum">01 &middot; <b>The practice</b></div>
+  <div class="theme"><div class="t">AI, in production</div>
+    <p>My focus since 2018 has been data science and machine learning &mdash; shipping ML before the gold rush &mdash; and lately how product people <em>actually</em> adopt AI: where it sticks, where it stalls, and what moves a team from AI-curious to AI-fluent.</p></div>
+  <div class="theme"><div class="t">People</div>
+    <p>The other half of my practice is people. I lead strong product functions and stretch capable product people into leaders who solve complex problems and delight customers. My method is manager-as-coach, built on ICF and ICAgile qualifications and a simple conviction:</p>
+    <p class="pull">The people in front of me are beyond capable. They don&rsquo;t need fixing, they need stretching &mdash; so their ideas can reach the next level.</p></div>
+  <div class="theme"><div class="t">Thinking with my hands</div>
+    <p>I&rsquo;m a trained visual facilitator and an illustrator &mdash; the video on the home page is me at my craft table, because drawing the problem is often how a room finally sees it. It&rsquo;s an unusual string to a product leader&rsquo;s bow, and it changes what workshops, strategy sessions and offsites can do.</p></div>
+  <div class="theme"><div class="t">Writing &amp; service</div>
+    <p>I&rsquo;m a UK Armed Forces spouse, and I&rsquo;ve built this career around my husband&rsquo;s service. I put the same craft to work for the forces community &mdash; and I write for the U.S. Army&rsquo;s public affairs team.</p>
+    <a class="fieldlink" href="#">Read: taking time out as a military spouse &rarr;</a>
+    <div class="note">Links to the new Field Note (to be built) &mdash; the canonical, name-attached home for your .mil pieces.</div></div>
+</div></section>
+
+<section class="block"><div class="wrap">
+  <div class="snum">02 &middot; <b>Skills</b></div>
+  <div class="skills">
+    <div class="skill"><div class="st">Craft</div><p>Product strategy, discovery and delivery at enterprise scale &mdash; the full lifecycle, owned.</p></div>
+    <div class="skill"><div class="st">People</div><p>Manager-as-coach leadership; ICF and ICAgile certified; capability building for whole functions.</p></div>
+    <div class="skill"><div class="st">AI-native</div><p>Practising, not posturing &mdash; shipped machine learning before the gold rush; builds with AI daily.</p></div>
+    <div class="skill"><div class="st">Visual facilitation</div><p>Trained facilitator and illustrator; workshops where the thinking gets drawn, not just discussed.</p></div>
+  </div>
+</div></section>
+
+<section class="block"><div class="wrap">
+  <div class="snum">03 &middot; <b>Credentials</b></div>
+  <div class="creds">MBA, Edinburgh Napier (2026) <b>·</b> Oxford Sa&iuml;d AI Programme <b>·</b> Fellow, BCS &mdash; The Chartered Institute for IT (2023) <b>·</b> ICF &amp; ICAgile certified <b>·</b> 20+ years across LEGO, Bupa, Kraft Heinz, Capital One, Bloomberg, Domino&rsquo;s and Walmart.</div>
+</div></section>
+
+<section class="block"><div class="wrap">
+  <div class="snum">04 &middot; <b>What people say</b></div>
+  <div class="quotes">
+    <div class="quote"><svg class="mark" viewBox="0 0 100 100"><use href="#leaf"/></svg><p>&ldquo;Elle has a rare ability to balance strategic product thinking with human dynamics &mdash; helping teams cut through the noise, stay outcome-focused, and build confidence in their delivery.&rdquo;</p><div class="who">Mike McKinlay &middot; Strategic Agile Delivery Lead, Bloomberg</div></div>
+    <div class="quote"><svg class="mark" viewBox="0 0 100 100"><use href="#leaf"/></svg><p>&ldquo;A true standout in the field of product management. For any challenge we faced, she always had a good story to share and a rabbit to pull out of the hat &mdash; and she championed a culture of continuous improvement.&rdquo;</p><div class="who">Paulo Furtado &middot; Technology &amp; Delivery Lead, Bupa</div></div>
+    <div class="quote"><svg class="mark" viewBox="0 0 100 100"><use href="#leaf"/></svg><p>&ldquo;A fantastic product professional. She brings a wealth of experience across a wide range of subject matters &mdash; I&rsquo;ve thoroughly enjoyed working together and hope to continue.&rdquo;</p><div class="who">Henry Carpenter &middot; Director, Barclays &mdash; CX &amp; Product Leadership</div></div>
+    <div class="quote"><svg class="mark" viewBox="0 0 100 100"><use href="#leaf"/></svg><p>&ldquo;One of the most rewarding and educational collaborations of my career. Elle is truly an outstanding practitioner &mdash; and her consultative approach means everyone knows what &lsquo;done&rsquo; means.&rdquo;</p><div class="who">Pat Fitzgerald &middot; Senior Vice President</div></div>
+    <div class="quote"><svg class="mark" viewBox="0 0 100 100"><use href="#leaf"/></svg><p>&ldquo;Elle drives change through clarity of strategic purpose while making the sessions fun and engaging. She challenges teams and leaders to focus on delivering value for customers.&rdquo;</p><div class="who">David Leach &middot; Digital &amp; Software Change Delivery Lead</div></div>
+    <div class="quote"><svg class="mark" viewBox="0 0 100 100"><use href="#leaf"/></svg><p>&ldquo;She can define, measure and excite others with the outcomes she&rsquo;s working to create &mdash; and always has a plan to get there. If I have a gnarly problem or a tough deliverable, I want her on my team. You should too.&rdquo;</p><div class="who">Paul Brown &middot; Product &amp; Delivery Partner</div></div>
+  </div>
+</div></section>
+
+<section class="block"><div class="wrap">
+  <div class="snum">05 &middot; <b>On stage &amp; in print</b></div>
+  <p class="muted" style="max-width:64ch;margin:0">I speak on product, transformation and careers in technology &mdash; panels, webinars and features. A couple of public ones: a Tech Role Models feature on curiosity and product craft, and a recorded panel on making agility real beyond the slideware. <a class="inline" href="#">See the talks &amp; features</a>.</p>
+</div></section>
+
+<div class="cta">
+  <div class="leafbg l2"><svg viewBox="0 0 100 100"><use href="#leaf"/></svg></div>
+  <div class="wrap">
+    <div class="snum">06 &middot; <b>Get in touch</b></div>
+    <p>The full story &mdash; names, numbers, client history &mdash; is in my CV, which I send personally. <a class="inline" href="#">Request it</a>, or book a conversation and I&rsquo;ll tell you the good parts myself.</p>
+  </div>
+</div>
+
 </body>
 </html>
